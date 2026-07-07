@@ -17,7 +17,7 @@ pipeline {
 
         stage('Run') {
             steps {
-                sh 'echo -e "10\n20\n" | java Test'
+                sh 'printf "10\n20\n+\n" | java Test'
             }
         }
     }
